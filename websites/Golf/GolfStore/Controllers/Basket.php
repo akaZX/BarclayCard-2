@@ -39,6 +39,15 @@ class Basket{
             'title' => 'The Golf Shop - Your Basket'
         ];
     }
+    
+    public function checkout(){
+        
+        return [
+            'template' => 'payment.php',
+            'variables' => [],
+            'title' => 'The Golf Shop - Checkout'
+        ];
+    }
 
 
 }

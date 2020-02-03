@@ -1,11 +1,17 @@
-<html>
+
+<main>
+
 <?php
-	$AMOUNT = $_POST['AMOUNT'];
-	$CURRENCY = $_POST['CURRENCY'];
-	$LANGUAGE = $_POST['LANGUAGE'];
-	$ORDERID = $_POST['ORDERID'];
-	$PSPID = $_POST['PSPID'];
-	$SHAIN = $_POST['SHAIN'];
+
+echo($_POST['order']['total']);
+
+
+	$AMOUNT = $_POST['order']['total'];
+	$CURRENCY = $_POST['order']['curency'];
+	$LANGUAGE = $_POST['order']['language'];
+	$ORDERID = uniqid();
+	$PSPID = 'UoN2020Grp2';
+	$SHAIN = '8aeb2827-5c65-4c5d-a6cb-237c585f0172';
 	
 	$ACTUALAMOUNT = (float)$AMOUNT * 100;
 
@@ -18,10 +24,7 @@
 	//$SHASIGN = hash('sha256', $SHASIGNATURE);
 	//$SHASIGN = hash('sha512', $SHASIGNATURE);
 ?>	
-	<head>
-		
-	</head>
-	<body bgcolor="#80CC99">
+	<!-- <body bgcolor="#80CC99"> -->
 		<font face="Tahoma" color="#000000">
 			<h1 align="center">Payment Page</h1>
 			<p></p>
@@ -40,8 +43,7 @@
 				<input type="hidden" name="ORDERID" value="<?php print $ORDERID?>">
 				<input type="hidden" name="PSPID" value="<?php print $PSPID?>">
 				<input type="hidden" name="SHASIGN" value="<?php print $SHASIGN?>">
-				<input type="submit" name="SUBMIT" value="Pay up!" style="background-color:#FFFFFF; height:30; width:150">
+				<input class="btn btn-primary" type="submit" value="Procceed">
 			</form>
 		</font>
-	</body>
-</html>
+</main>
