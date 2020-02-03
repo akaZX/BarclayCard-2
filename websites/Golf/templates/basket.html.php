@@ -74,11 +74,12 @@
         <li>
             <h3>Sub Total | £<?=$total?></h3>
             <?php if($ptotal>0){ $total = $total + 5;?>
+			<input type="hidden" name="order[total]" value =<?=$total?>>
             <p> Shipping cost: £5 </p>
             <?php } ?>
             <h2>Total | £<?=$total?> </h2>
 
-            <form action="#" method='get' enctype="multipart/form-data">
+            <form action="" method='Post' enctype="multipart/form-data">
             <input type="submit" name="checkout" value="Checkout">
             </form>
         </li>

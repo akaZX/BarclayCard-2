@@ -78,12 +78,12 @@ class Routes implements \Backend\Routes {
 					'function'=> 'post'
 				]
 			],
-			'checkout'=>[				
-				'POST'=>[
-					'controller'=> $paymentController,
-					'function'=> 'checkout'
-				]
-			]
+			// 'checkout'=>[				
+			// 	'POST'=>[
+			// 		'controller'=> $paymentController,
+			// 		'function'=> 'checkout'
+			// 	]
+			// ]
 			];
 		//The above array works by using the route as the first part of the array then the method used if none assume GET, 
 		//then you state the controller and function for the page the user is routing too.

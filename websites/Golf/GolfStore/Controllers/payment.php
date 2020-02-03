@@ -39,7 +39,7 @@
 				<input type="hidden" name="LANGUAGE" value="<?php print $LANGUAGE?>">
 				<input type="hidden" name="ORDERID" value="<?php print $ORDERID?>">
 				<input type="hidden" name="PSPID" value="<?php print $PSPID?>">
-				<input type="hidden" name="SHASIGN" value="<?php print $SHASIGN;?>">
+				<input type="hidden" name="SHASIGN" value="<?php print $SHASIGN?>">
 				<input type="submit" name="SUBMIT" value="Pay up!" style="background-color:#FFFFFF; height:30; width:150">
 			</form>
 		</font>
