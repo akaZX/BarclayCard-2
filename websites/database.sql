@@ -37,7 +37,7 @@ CREATE TABLE `basket_items` (
   `quantity` int(11) NOT NULL,
   `state` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT 'pending',
   PRIMARY KEY (`basket_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,6 +46,7 @@ CREATE TABLE `basket_items` (
 
 LOCK TABLES `basket_items` WRITE;
 /*!40000 ALTER TABLE `basket_items` DISABLE KEYS */;
+INSERT INTO `basket_items` VALUES (4,0,1,1,'pending'),(5,0,2,8,'pending');
 /*!40000 ALTER TABLE `basket_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1226,4 +1227,4 @@ USE `new_schema`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-02-03 14:22:32
+-- Dump completed on 2020-02-04  0:03:09
